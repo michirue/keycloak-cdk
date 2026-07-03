@@ -1,0 +1,31 @@
+{
+  "name": "keycloak-cdk",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "watch": "tsc --noEmit -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy": "jest && cdk deploy",
+    "clean": "rm -rf cdk.out .cdk.staging && find ./bin ./lib ./test -type f \\( -name '*.js' -o -name '*.d.ts' \\) -delete"
+  },
+  "devDependencies": {
+    "@types/jest": "^30",
+    "@types/node": "^26.1.0",
+    "aws-cdk": "2.1129.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
+    "ts-node": "^10.9.2",
+    "typescript": "~6.0.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.261.0",
+    "constructs": "^10.5.0",
+    "dotenv": "^17.4.2"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "unrs-resolver@1.12.2": true
+  }
+}
